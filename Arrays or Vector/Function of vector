@@ -1,0 +1,49 @@
+//max_size() – Returns the maximum number of elements that the vector can hold.
+//capacity() – Returns the size of the storage space currently allocated to the vector expressed as number of elements.
+//resize(n) – Resizes the container so that it contains ‘n’ elements.
+//shrink_to_fit() – Reduces the capacity of the container to fit its size and destroys all elements beyond the capacity.
+//front() – Returns a reference to the first element in the vector
+//back() – Returns a reference to the last element in the vector
+
+// C++ program to illustrate the
+// capacity function in vector
+#include <iostream>
+#include <vector>
+  
+using namespace std;
+  
+int main()
+{
+    vector<int> g1;
+  
+    for (int i = 1; i <= 5; i++)
+        g1.push_back(i);
+ 
+    cout << "\nCapacity : " << g1.capacity();
+    cout << "\nMax_Size : " << g1.max_size();
+  
+    // resizes the vector size to 4
+    g1.resize(4);
+  
+    // prints the vector size after resize()
+    cout << "\nSize : " << g1.size();
+  
+    // Shrinks the vector
+    g1.shrink_to_fit();
+    cout << "\nVector elements are: ";
+    for (auto it = g1.begin(); it != g1.end(); it++)
+        cout << *it << " ";
+  
+         cout << g1.front();
+        
+         cout << g1.back();
+    return 0;
+}
+
+Output:
+Capacity : 8
+Max_Size : 4611686018427387903
+Size : 4
+Vector elements are: 1 2 3 4
+front:1
+back:4
