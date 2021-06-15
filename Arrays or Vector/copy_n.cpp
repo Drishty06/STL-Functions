@@ -1,7 +1,9 @@
 //  use for copying arrays element into another arrays.
-
+// header file: #include <algorithm>
 // syntax: copy_n(array name from you want to copy,arrays size, array name in you want to copy)
 
+
+// code snippet:
 #include<iostream>
 #include<algorithm> // for copy_n()
 using namespace std;
