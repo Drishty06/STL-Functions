@@ -1,5 +1,8 @@
 // used for : merge two sorted containers and stores in new container in sorted order
 // syntax:  merge(begin1,end1,begin2,end2,begin3)
+// begin1 and begin2 and begin3 :Iterator to 1st element of the containers
+// end1 and end2: Iterator to last element of the containers
+
 // header file: #include <algorithm>
 
 // code snippet:
